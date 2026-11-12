@@ -1,0 +1,23 @@
+:root{--bg:#f6f1e7;--ink:#1c2230;--acc:#1f3354;--lijn:#d9d0bd}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+a{color:inherit}.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+h1,h2,.logo{font-family:'Playfair Display',serif;line-height:1.1}
+header{background:var(--bg);border-bottom:1px solid var(--lijn);position:sticky;top:0;z-index:10}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:12px;padding-bottom:12px}
+.logo{font-size:1.5rem;text-decoration:none;color:var(--acc);font-weight:700}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:12px 22px;text-decoration:none;font-weight:700;font-size:15px;border:1px solid var(--acc)}
+.btn.licht{background:transparent;color:var(--acc)}
+.hero{padding:96px 0 80px}.hero .tag{letter-spacing:.18em;text-transform:uppercase;font-size:13px;color:var(--acc);margin-bottom:18px;font-weight:700}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);max-width:760px;margin-bottom:20px}
+.lead{max-width:560px;font-size:1.15rem;margin-bottom:28px}.acties{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:64px 0;border-top:1px solid var(--lijn)}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:22px}
+.dienst{list-style:none;max-width:520px}.dienst li{padding:16px 0;border-bottom:1px solid var(--lijn);font-size:1.25rem;font-family:'Playfair Display',serif}
+.donker{background:var(--acc);color:#fff;border:0}.donker a{color:#fff}
+.kol{display:grid;grid-template-columns:1fr 1fr;gap:40px}.kol p{margin-bottom:14px}
+iframe{width:100%;height:300px;border:0}
+footer{background:#111;color:#bbb;font-size:14px;padding:24px 0 84px}footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}footer a{color:#fff}
+.balk{display:none}
+@media(max-width:760px){.kol{grid-template-columns:1fr}.hero{padding:60px 0 50px}header .btn{display:none}
+.balk{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--acc);z-index:20}.balk a{flex:1;text-align:center;color:#fff;text-decoration:none;font-weight:700;padding:14px}.balk a+a{border-left:1px solid rgba(255,255,255,.3)}}
